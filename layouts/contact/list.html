@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/thankyou';}"></iframe>
+        <form action="{{ .Site.Params.contact_form_action }}" target="hidden_iframe" method="POST" class="bg-white p-lg-5 p-4 row" onsubmit="submitted=true">
+          <div class="col-12">
+            <h1 class="section-title">{{ .Title }}</h1>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="first-name">{{ i18n "first_name"}}</label>
+            <input type="text" name="entry.1243142390" id="first-name" class="form-control" placeholder="Alexender">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="last-name">{{ i18n "last_name"}}</label>
+            <input type="text" name="entry.1520780422" id="last-name" class="form-control" placeholder="Grahambel">
+          </div>
+          <div class="form-group col-12">
+            <label for="email">{{ i18n "email" }}</label>
+            <input type="email" name="entry.1437271874" id="email" class="form-control" placeholder="alexender@email.com">
+          </div>
+          <div class="form-group col-12">
+            <label for="message">{{ i18n "message"}}</label>
+            <textarea name="entry.353532996" id="message" class="form-control" placeholder="Lorem Ipsum is simply dummy text of the printing and...……."></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">{{ i18n "send" }}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
