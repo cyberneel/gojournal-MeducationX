@@ -93,7 +93,7 @@ contact_form_action = "https://docs.google.com/forms/d/e/1FAIpQLSd73iLUo4NsczzaT
 google_analitycs_id = "" # your id
 # sidebar
 sidebar = "left" #sidebar value (left,right,false)
-copyright = "Copyright &copy; 2023 [MeducationX](https://meducation.github.io/)"
+copyright = "Copyright &copy; 2023 [MeducationX](https://meducationx.github.io/)"
 
 # Preloader
 [params.preloader]

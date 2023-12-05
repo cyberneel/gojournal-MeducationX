@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meducation | Get Meducated</title>
+    <link>https://meducationx.github.io/</link>
+    <description>Recent content on Meducation | Get Meducated</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2023 [MeducationX](https://meducation.github.io/)</copyright>
+    <lastBuildDate>Tue, 14 Nov 2023 15:40:24 +0600</lastBuildDate><atom:link href="https://meducationx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caffeine</title>
+      <link>https://meducationx.github.io/post/blog-2/</link>
+      <pubDate>Tue, 14 Nov 2023 15:40:24 +0600</pubDate>
+      
+      <guid>https://meducationx.github.io/post/blog-2/</guid>
+      <description>&amp;nbsp;&amp;nbsp; &amp;nbsp;Caffeine is a natural stimulant found in coffee beans, tea leaves, cocoa beans, and some other plants. It is frequently added to a variety of items, such as energy drinks and some pharmaceuticals, and consumed in drinks like coffee and tea.</description>
+    </item>
+    
+    <item>
+      <title>Spooky Spectrum of Illnesses</title>
+      <link>https://meducationx.github.io/post/blog-1-copy/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meducationx.github.io/post/blog-1-copy/</guid>
+      <description>Many diseases and disorders affect populations all around the world. While some of them are more common, others are not as known.</description>
+    </item>
+    
+    <item>
+      <title>Spooky Spectrum of Illnesses</title>
+      <link>https://meducationx.github.io/post/blog-1/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meducationx.github.io/post/blog-1/</guid>
+      <description>Many diseases and disorders affect populations all around the world. While some of them are more common, others are not as known.</description>
+    </item>
+    
+  </channel>
+</rss>
