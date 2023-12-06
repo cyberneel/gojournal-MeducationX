@@ -8,14 +8,12 @@
         <p class="mb-4">{{ .subscription_content | markdownify }}</p>
         {{ end }}
         {{ with .Site.Params.subscription }}
-        <form action="{{ .mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe" onsubmit="submitted=true">
           <div class="input-group px-lg-5">
-            <input type="email" class="form-control" placeholder="Your Email Address">
+            <input type="email" class="form-control" name="entry.1196139997" placeholder="Your Email Address">
             <div class="input-group-append">
               <button class="btn btn-primary" type="submit" name="subscribe">{{ i18n "subscribe"}}</button>
-            </div>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-              <input type="text" name="{{ .mailchimp_form_name }}" tabindex="-1">
             </div>
           </div>
         </form>

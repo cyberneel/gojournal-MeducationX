@@ -1,0 +1,32 @@
+{{- if .Site.Params.sharing.enabled -}}
+    {{- if or .Params.sharing (not (isset .Params "sharing")) -}}
+        {{- $page := . -}}
+        {{- $order := "asc" -}}
+        {{- $list := .Site.Params.sharing.providers -}}
+        {{- if .Site.Params.sharing.reverse }}{{ $order = "desc" }}{{ else }}{{ $order = "asc" }}{{ end -}}
+        {{- $sort := .Site.Params.sharing.sort | default "weight" -}}
+        {{- $list = sort $list $sort $order -}}
+        <div class="py-3 text-body-secondary hstack gap-2">
+            {{ T "shareLink" "" }}
+            {{- range $index, $item := $list -}}
+                {{- $url := $item.url -}}
+                {{- $url = replace $url "{url}" $page.Permalink -}}
+                {{- $url = replace $url "{title}" (urlquery $page.Title) -}}
+                {{- $url = $url | safeURL -}}
+                {{- $target := "" -}}
+                {{- $clipboard := "" -}}
+                {{- if .clipboard -}}
+                    {{- $target = (printf "toast-message-%s-%d" (anchorize $item.name) $index ) -}}
+                    {{- $clipboard = $url -}}
+                    {{- $url = "#!" -}}
+                    {{- partial "assets/toast.html" (dict "id" $target "message" (printf "%s %s" (T "link")  (T "copiedToClipboard"))) -}}
+                {{- end -}}
+                {{ partial "assets/button.html" (dict "toast" $target "clipboard" $clipboard "href" $url "icon" (printf "%s fa-fw" $item.icon) "class" "btn-social p-0" "label" (T "shareLink" $item.name)) }}
+            {{- end -}}
+            {{ if .Site.Params.sharing.webshare }}
+                {{ $attr := dict "data-sharing-title" .Title "data-sharing-description" .Description "data-sharing-url" .Permalink }}
+                {{ partial "assets/button.html" (dict "href" "#!" "icon" "fas share-nodes fa-fw" "id" "btn-webshare" "class" "btn-social p-0" "attributes" $attr "label" (T "shareLink" (T "shareSystem"))) }}
+            {{- end -}}
+        </div>
+    {{- end -}}
+{{- end -}}

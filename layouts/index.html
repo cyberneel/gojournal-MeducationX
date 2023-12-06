@@ -64,6 +64,10 @@
 </section>
 <!-- /featured post -->
 
+<!-- Welcome About -->
+
+<!-- /Welcome About -->
+{{- partial "home/featured.html" . -}}
 <!-- trending post -->
 {{- if gt (len (where .Site.Pages "Type" "trending")) 0 }}
 <section class="section-sm">

@@ -1,0 +1,22 @@
+<div class="container-fluid flex-fill feature grey-bg">
+    <div class="row row-cols-1 row-cols-sm-4 h-100 featured-about px-4 py-5 bg-opacity-{{ .Site.Params.style.themeOpacity | default "25" | safeHTML }} align-items-center">
+        <div class="col col-lg-2 d-none d-lg-block bg-info order-1"></div>
+        <div class="col col-sm-6 col-lg-4 text-center text-sm-start order-3 order-sm-2">
+            <p class="featured-about-text display-4 zoom-text">{{ .Title }}</p>
+            <p class="featured-about-text">{{ .Content }}<p>
+        </div>
+        <div class="col text-sm-start text-center col-sm-6 col-lg-4 order-2 order-sm-3">
+            {{- $thumbnail := (or (and (reflect.IsMap .Params.Thumbnail) .Params.Thumbnail.url) .Params.Thumbnail) -}}
+            {{- $thumbnail = $thumbnail -}}
+            
+            {{- if $thumbnail -}}
+                {{- partial "assets/image.html" (dict "url" $thumbnail "outerClass" "img-wrap pulse-anim" "title" .Site.Title) -}}
+            {{ end }}
+            <div class="pb-5 d-block d-sm-none"></div>
+        </div>
+        <div class="col col-lg-2 d-none d-lg-block bg-info order-4"></div>
+    </div>
+</div>
+<script type="text/javascript" unsafe-inline>
+    console.log(fetch("https://api.github.com/users/MeducationX", {method:"get", mode:'cors', headers: {}}).then(response =>  {return response.json()}));
+</script>

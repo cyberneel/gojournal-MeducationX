@@ -1,0 +1,34 @@
+{{- $absoluteURL := site.Params.main.canonifyAssetsURLs | default false -}}
+{{- $filename := .filename | default "js/main.bundle.js" -}}
+{{- $match := .match | default "{js/*.js,js/vendor/**.js}" -}}
+{{- $page := .page -}}
+{{- $header := .header -}}
+{{- $core := .core | default false -}}
+{{- $skipTemplate := .skipTemplate | default false -}}
+
+{{- $modules := "" -}}
+{{ if $core }}
+    {{- $modules = site.Params.modules.core -}}
+{{- end -}}
+
+{{- $bundle := partial "utilities/bundle" (dict "match" $match "filename" $filename "modules" $modules "basepath" "js/modules" "all" true "debugging" site.Params.debugging.showJS) -}}
+{{- $js := $bundle -}}
+{{- if not $skipTemplate -}}
+    {{- $js = $bundle | resources.ExecuteAsTemplate $filename $page -}}
+{{- end -}}
+
+{{- if and (not site.IsServer) $header -}}
+    {{- $pc := site.Config.Privacy.GoogleAnalytics -}}
+    {{- if and (not $pc.Disable) (hasPrefix site.GoogleAnalytics "G-") }}
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.GoogleAnalytics }}"></script>
+    {{- end }}
+{{- end -}}
+
+{{- if gt (len $js.Content) 0 -}}
+    {{- if not hugo.IsProduction -}}
+        <script src="{{ if $absoluteURL }}{{ $js.Permalink }}{{ else }}{{ $js.RelPermalink }}{{ end }}"></script>
+    {{ else -}}
+        {{ $js = $js | minify | fingerprint -}}
+        <script src="{{ if $absoluteURL }}{{ $js.Permalink }}{{ else }}{{ $js.RelPermalink }}{{ end }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+    {{ end -}}
+{{ end -}}
