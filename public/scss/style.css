@@ -53,14 +53,15 @@ h6, .h6 {
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
   padding: 10px 30px;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid;
   position: relative;
   z-index: 1;
   transition: .2s ease; }
   .btn:hover, .btn:active, .btn:focus {
     outline: 0;
-    box-shadow: none !important; }
+    box-shadow: none !important;
+    transform: scale(1.1); }
 
 .btn-primary {
   background: #2074e3;
@@ -80,12 +81,76 @@ h6, .h6 {
     color: #fff; }
 
 body {
-  background-color: #F8F8F8;
+  background-image: linear-gradient(#fefefe 55%, #2e8de14c);
   overflow-x: hidden; }
 
 ::selection {
   background: #175db9;
   color: #fff; }
+
+.row {
+  margin-top: 15px; }
+
+.hov-scale-logo {
+  transition: 0.3s; }
+
+.hov-scale-logo:hover {
+  transform: scale(1.05); }
+
+.featured-about {
+  background: #ebebeb; }
+
+.feature {
+  margin-bottom: 20px; }
+
+.featured-about-text {
+  color: #000; }
+
+.widget {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 2px #2e8ce124;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out; }
+
+.widget:hover {
+  transform: scale(1.05); }
+
+.card:hover {
+  transform: scale(1.025); }
+
+.post-wrapper:hover {
+  transform: scale(1.025); }
+
+.post-wrapper {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 2px #2e8ce1;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out; }
+
+.content {
+  padding: 10px;
+  background-color: #fefefe;
+  box-shadow: 0px 0px 10px 2px #2e8ce11c;
+  border-radius: 15px;
+  margin-bottom: 25px; }
+
+.card {
+  border-radius: 15px !important;
+  box-shadow: 0px 0px 10px 2px #2e8ce124 !important;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out; }
+
+.post-content {
+  border-radius: 15px; }
+
+.nav-item {
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: transparent !important;
+  border-radius: 15px !important; }
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important; }
 
 /* preloader */
 .preloader {
@@ -98,7 +163,19 @@ body {
   z-index: 9999;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  animation-name: scale-pulsing;
+  animation-timing-function: ease-in-out;
+  animation-duration: 8s;
+  animation-iteration-count: infinite; }
+
+@keyframes scale-pulsing {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
 
 img {
   vertical-align: middle;
@@ -241,7 +318,7 @@ textarea.form-control {
     background-color: transparent; }
 
 .navbar-expand-md .navbar-nav .dropdown-menu {
-  background-color: #F8F8F8;
+  background-color: #fefefe;
   padding: 10px 0;
   margin: 0;
   border-radius: 0;
