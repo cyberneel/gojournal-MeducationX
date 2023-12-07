@@ -146,6 +146,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media (min-width: 900px) {
+  .feature {
+    width: 90%;
+  }
+}
+
 .featured-about-text {
   color: $text-color-dark;
 }
