@@ -25,9 +25,40 @@ $(window).on('load', function () {
 		dots: true
 	});
 
+	var userId = $('#instafeed').attr('data-userId');
+	//var accessToken = $('#instafeed').attr('data-accessToken');
+	var accessToken = 'IGQWRPZA3N4cHVINHB2';
+	accessToken += 'U1AxbWJkUllFdDEyQXA5Um5PdURlN1hrZA2QzVGtnc';
+	accessToken += 'WJJeTVyYVROWUo0bkU0MFp1a3F';
+	accessToken += 'qRE1BUWpaaFRmYUxWV3NGYjJSRlNBT';
+	accessToken += 'jNHcE5jZAGR6ZATFqeUxrWTAya2VtQ1RuZAmJzc1lHMW41bjgZD'
+
+	console.log("TEST");
+
+	async function getData(url, debug=true) {
+		const response = await fetch(url);
+		const data = await response.json();
+		if(debug)
+			console.log(data);
+		return data;
+	}
+
+	async function getPostsMedia(recentPostsIds) {
+		for (let i = 0; i < recentPostsIds.length; i++) {
+			const data = await getData('https://graph.instagram.com/v18.0/' + recentPostsIds[i].id + '?fields=id,media_type,permalink,media_url,timestamp&access_token=' + accessToken, false);
+			//console.log(data);
+			$('#instafeed').append('<a href="' + data.permalink + '"><img style="max-width: 100%; padding: 2px" src="' + data.media_url + '" /></a>');
+		}
+	}
+
+	var postsData;
+	var recentPosts;
+	getData('https://graph.instagram.com/v18.0/' + userId + '/media?access_token=' + accessToken, false)
+			.then(data => {postsData = data; recentPosts = postsData.data.slice(0,6); /*console.log(recentPosts); */getPostsMedia(recentPosts);})
+			.catch(error => console.error(error));
 
 	// instafeed
-	if (($('#instafeed').length) !== 0) {
+	/*if (($('#instafeed').length) !== 0) {
 		var userId = $('#instafeed').attr('data-userId');
 		var accessToken = $('#instafeed').attr('data-accessToken');
 		var userFeed = new Instafeed({
@@ -40,7 +71,7 @@ $(window).on('load', function () {
 			template: '<div class="col-4 px-1 mb-2"><a href="{{link}}" target="_blank"><img class="img-fluid w-100" src="{{image}}" alt="instagram-image"></a></div>'
 		});
 		userFeed.run();
-	}
+	}*/
 
 
 
