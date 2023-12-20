@@ -69,9 +69,14 @@ URL = "contact"
 weight = 4
 
 [[menu.main]]
+name = "Quizzes"
+url = "quizzes"
+weight = 5
+
+[[menu.main]]
 name = "Links"
 URL = "https://meducationx.carrd.co"
-weight = 5
+weight = 6
 
 # footer menu
 

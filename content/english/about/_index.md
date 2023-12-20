@@ -4,7 +4,7 @@ image: "images/BLUELOGOONLY.png"
 date: 2023-10-22
 # description
 description: "At MeducationX, our commitment to spreading medical knowledge, improving community health, and providing essential life-saving skills is unwavering.Join us in our journey to empower individuals, improve community health, and make essential medical knowledge a universal resource."
-categories: ["about"]
+categories: [""]
 type: featured
 draft: false
 

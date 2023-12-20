@@ -1,6 +1,6 @@
 ---
 title: "Contact Us"
 # description
-description: "this is meta description"
+description: "Contact Meducationx!"
 draft: false
 ---

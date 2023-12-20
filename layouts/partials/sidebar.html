@@ -8,9 +8,11 @@
 {{ end }}
 <!-- recent-post -->
 <div class="widget">
-  <h4 class="widget-title">{{ i18n "recent_post"}}</h4>
+  <!-- <h4 class="widget-title">{{ i18n "recent_post"}}</h4> -->
+  <h4 class="widget-title">Latest Blogs</h4>
   <ul class="list-unstyled">
     {{ range first 3 ( where .Site.RegularPages "Section" "post" )}}
+    {{ if not (eq (len .Params.categories) 0) }}
     <li class="media mb-3">
       <a href="{{ .Permalink }}">
         {{ if .Params.Image }}
@@ -24,6 +26,7 @@
         <small class="post-date">{{ .PublishDate.Format "Jan 02, 2006"}}</small>
       </div>
     </li>
+    {{ end }}
     {{ end }}
   </ul>
 </div>
