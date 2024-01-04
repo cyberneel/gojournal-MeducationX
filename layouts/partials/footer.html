@@ -8,8 +8,8 @@
         <p class="mb-4">{{ .subscription_content | markdownify }}</p>
         {{ end }}
         {{ with .Site.Params.subscription }}
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe" onsubmit="submitted=true">
+        <iframe name="hidden_iframe_F" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe_F" onsubmit="submitted=true">
           <div class="input-group px-lg-5">
             <input type="email" class="form-control" name="entry.1196139997" placeholder="Your Email Address">
             <div class="input-group-append">

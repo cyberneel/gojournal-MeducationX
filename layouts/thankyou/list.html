@@ -2,7 +2,8 @@
 <br>
 <section class="section-sm bg-light">
   <div class="container text-center">
-    <h1>{{.Title | title}}</h1>
+    <h1>Thank You!</h1>
+    <p>We will look at your response soon!</p>
   </div>
 </section>
 
@@ -22,8 +23,12 @@
       <div
         class="{{if or (eq $sidebar `left`) (eq $sidebar `right`)}}col-lg-9{{ else }}col-12{{end}} {{if eq $sidebar `left`}}order-1 order-lg-2{{end}} mb-5 mb-lg-0">
         <div class="row">
-          {{ $paginator := .Paginate (where .Site.RegularPages "Section" "quizzes") }}
-          {{ range $index,$elements:= $paginator.Pages }}
+          <!--get filtered pages-->
+          <!--{{ $paginator := (where .Site.RegularPages "Section" "post") }}-->
+          {{ $paginator := .Site.RegularPages }}
+          {{ $filter := slice .Title }}
+          {{ $filteredPaginator := .Paginate $paginator }}
+          {{ range $index,$elements:= $filteredPaginator.Pages }}
           {{ if eq $index 0}}
           <div class="col-12 mb-4">
             <article class="card">
@@ -40,7 +45,7 @@
                   <small class="post-date date-style large">{{ .PublishDate.Format "January 02, 2006"}}</small>
                   <!--<p class="my-4">{{ .Summary | truncate 150}}</p>-->
                   <p class="my-4">{{  .Params.description  }}</p>
-                  <a href="{{ .Permalink }}" class="btn btn-outline-primary">Try Quiz!</a>
+                  <a href="{{ .Permalink }}" class="btn btn-outline-primary">{{ i18n "read_more" }}</a>
                 </div>
               </div>
             </article>

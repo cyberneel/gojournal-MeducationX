@@ -6,7 +6,7 @@ image : "https://lh7-us.googleusercontent.com/kO8Lror3kyeEgrfxr3s4FH-aX8fbpxvOsV
 # description
 description: "In honor of Halloween, here are some spooky diseases and disorders that deserve to be addressed."
 # Taxonomies
-categories: ["blog"]
+categories: ["Blog"]
 # post type
 type: "featured" # all type (featured, trending, regular)
 draft: false

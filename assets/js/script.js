@@ -53,9 +53,11 @@ $(window).on('load', function () {
 
 	var postsData;
 	var recentPosts;
-	getData('https://graph.instagram.com/v18.0/' + userId + '/media?access_token=' + accessToken, false)
-			.then(data => {postsData = data; recentPosts = postsData.data.slice(0,6); /*console.log(recentPosts); */getPostsMedia(recentPosts);})
-			.catch(error => console.error(error));
+	if(userId != undefined) {
+		getData('https://graph.instagram.com/v18.0/' + userId + '/media?access_token=' + accessToken, false)
+				.then(data => {postsData = data; recentPosts = postsData.data.slice(0,6); /*console.log(recentPosts); */getPostsMedia(recentPosts);})
+				.catch(error => console.error(error));
+	}
 
 	// instafeed
 	/*if (($('#instafeed').length) !== 0) {

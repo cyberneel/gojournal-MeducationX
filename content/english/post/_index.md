@@ -1,6 +1,6 @@
 ---
-title: "Blogs"
+title: "Blog"
 draft: false
 # description
-description: "This is meta description"
+description: "Expand your medical knowledge by reading our blogs!"
 ---

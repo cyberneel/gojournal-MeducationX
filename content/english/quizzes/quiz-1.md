@@ -6,9 +6,9 @@ image : "https://lh7-us.googleusercontent.com/kO8Lror3kyeEgrfxr3s4FH-aX8fbpxvOsV
 # description
 description: "A quiz based on the Spooky Spectrum of Illnesses Blog!"
 # Taxonomies
-categories: []
+categories: ["Quiz"]
 # post type
-type: "" # all type (featured, trending, regular)
+type: "trending" # all type (featured, trending, regular)
 draft: false
 ---
 
@@ -79,65 +79,5 @@ What is the primary symptom of Subconjunctival Hemorrhage?
 1. [ ] Discolored patches of skin
 1. [x] Bright red patch in the sclera
 1. [ ] Involuntary muscle spasms
-
-# Multiple Choice
-
-Select the disorder(s) associated with potential abnormal neuron activity or seizures:
-
-> Read the article [HERE!]({{< ref "/post/blog-1" >}} "Click to read!")
-
-- [ ] Sleep paralysis
-- [ ] Cotard’s syndrome
-- [ ] Alien hand syndrome
-- [x] Exploding head syndrome
-- [ ] Phantom limb syndrome
-
-# Multiple Choice
-
-Choose the sleep-related disorder(s) mentioned in the article:
-
-> Read the article [HERE!]({{< ref "/post/blog-1" >}} "Click to read!")
-
-- [x] Sleepwalking
-- [ ] Sleep paralysis
-- [x] Exploding head syndrome
-- [ ] Alien hand syndrome
-- [ ] Rigor mortis
-
-# Multiple Choice
-
-Which disease(s) have treatment involving medications like Citalopram and Lithium?
-
-> Read the article [HERE!]({{< ref "/post/blog-1" >}} "Click to read!")
-
-- [ ] Sleep paralysis
-- [ ] Cotard’s syndrome
-- [x] Exploding head syndrome
-- [ ] Phantom limb syndrome
-- [ ] Porphyria
-
-# Multiple Choice
-
-Select the disease(s) associated with skin abnormalities or lesions:
-
-> Read the article [HERE!]({{< ref "/post/blog-1" >}} "Click to read!")
-
-- [x] Porphyria
-- [x] Stevens-Johnson Syndrome
-- [x] Necrotizing Fasciitis
-- [x] Harlequin Ichthyosis
-- [x] Toxic Epidermal Necrolysis
-
-# Multiple Choice
-
-Choose the disease(s) related to abnormal bone or tissue growth:
-
-> Read the article [HERE!]({{< ref "/post/blog-1" >}} "Click to read!")
-
-- [x] Proteus Syndrome
-- [x] FOP (Fibrodysplasia Ossificans Progressiva)
-- [ ] Paraneoplastic Pemphigus
-- [x] PKAN (Pantothenate Kinase-Associated Neurodegeneration)
-- [ ] Hypertrichosis
 
 {{< /quizdown >}}

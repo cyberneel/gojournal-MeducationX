@@ -1,0 +1,101 @@
+{{ define "main" }}
+
+{{ if not .Params.Image }}
+<section class="section-sm bg-light">
+  <div class="container text-center">
+    <small class="post-category mb-2">{{ delimit .Params.categories ", " }}</small>
+    <h1>{{.Title | title}}</h1>
+    <small class="post-date">{{ .PublishDate.Format "January 02, 2006"}}</small>
+  </div>
+</section>
+{{ end }}
+
+<section class="py-4">
+  <div class="container">
+    <div class="row">
+      {{ if .Params.Image }}
+      <div class="col-12 mb-4">
+        <img src="{{ .Params.Image | absURL }}" alt="{{ $.Title }}" class="img-fluid w-100" style="max-height: 500px; object-fit: cover;">
+      </div>
+      {{ end }}
+      <!-- left sidebar -->
+      {{ $sidebar:= .Site.Params.sidebar }}
+      {{ $layout:= .Site.Params.layout }}
+      {{ if eq $sidebar "left" }}
+      <aside class="col-lg-3 order-2 order-lg-1">
+        {{ partial "sidebar.html" . }}
+      </aside>
+      {{ end }}
+      <!-- /left sidebar -->
+      <div
+        class="{{if or (eq $sidebar `left`) (eq $sidebar `right`)}}col-lg-9{{ else }}col-lg-9 mx-auto{{end}} {{if eq $sidebar `left`}}order-1 order-lg-2{{end}} mb-5 mb-lg-0">
+        {{ if .Params.Image }}
+        <small class="post-category mb-2">{{ delimit .Params.categories ", " }}</small>
+        <h1 class="h2">{{.Title}}</h1>
+        <small class="post-date mb-4">{{ .PublishDate.Format "January 02, 2006"}}</small>
+        {{ end }}
+        <div class="content">{{.Content}}</div>
+
+        <!--Submission Form Start-->
+
+        <section class="section-sm">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <iframe name="hidden_iframe_C" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/thankyou';}"></iframe>
+                <form action="{{ .Params.formaction }}" style="border-radius: 15px;" target="hidden_iframe_C" method="POST" class="bg-white p-lg-5 p-4 row" onsubmit="submitted=true">
+                  <div class="col-12">
+                    <h1 class="section-title">{{ .Title }}</h1>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="first-name">{{ i18n "first_name"}}</label>
+                    <input type="text" name="{{ .Params.name_f_name }}" id="first-name" class="form-control" placeholder="Alexender" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="last-name">{{ i18n "last_name"}}</label>
+                    <input type="text" name="{{ .Params.name_l_name }}" id="last-name" class="form-control" placeholder="Grahambel" required>
+                  </div>
+                  <div class="form-group col-12">
+                    <label for="email">{{ i18n "email" }}</label>
+                    <input type="email" name="{{ .Params.name_email }}" id="email" class="form-control" placeholder="alexender@email.com" required>
+                  </div>
+                  <div class="form-group col-12">
+                    <label for="agree">Have you read and agree with the <a href="">rules & guidelines</a>?</label><br>
+                    <input type="radio" id="yes" name="agree" value="30" required>
+                    <label for="yes">I Agree</label>
+                  </div>
+                  <div class="form-group col-12">
+                    <label for="message">Link to your MLA formatted paper</label>
+                    <textarea name="{{ .Params.name_essay_link }}" id="message" class="form-control" placeholder="Lorem Ipsum is simply dummy text of the printing and...……." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">{{ i18n "send" }}</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Submission Form End-->
+        
+        <!-- comments -->
+        {{ if .Site.DisqusShortname }}
+        <div class="mt-5">
+          {{ template "_internal/disqus.html" . }}
+        </div>
+        {{ end }}
+      </div>
+      
+      <!-- right sidebar -->
+      {{ if eq $sidebar "right" }}
+      <aside class="col-lg-3">
+        {{ partial "sidebar.html" . }}
+      </aside>
+      {{ end }}
+      <!-- /right sidebar -->
+    </div>
+  </div>
+</section>
+
+{{ end }}
