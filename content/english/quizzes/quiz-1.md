@@ -8,7 +8,7 @@ description: "A quiz based on the Spooky Spectrum of Illnesses Blog!"
 # Taxonomies
 categories: ["Quiz"]
 # post type
-type: "trending" # all type (featured, trending, regular)
+type: "" # all type (featured, trending, regular)
 draft: false
 ---
 

@@ -8,7 +8,7 @@ description: "A writing competition"
 # Taxonomies
 categories: ["Competition"]
 # post type
-type: "trending" # all type (featured, trending, regular)
+type: "" # all type (featured, trending, regular)
 draft: false
 
 # Submission Form Variables
