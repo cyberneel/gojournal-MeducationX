@@ -11,6 +11,9 @@ categories: ["Competition"]
 type: "" # all type (featured, trending, regular)
 draft: false
 
+# Deadline
+deadline: 2024-02-28
+
 # Submission Form Variables
 formaction: "https://docs.google.com/forms/u/4/d/e/1FAIpQLSef3M0K57V_x1D0MHw0qgKxY-iL3obT6RroJALvSRpRvZrfag/formResponse"
 # Entry Ids for names (Google forms)
