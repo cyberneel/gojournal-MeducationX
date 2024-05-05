@@ -10,29 +10,44 @@ draft: false
 
 # team
 team:
-  - name : "Sahad Valiani"
-    image : "images/team/sahad.png"
-    designation : "Founder & President"
-  # team member
- # - name : "Sahad Valiani"
+  #- name : "Sahad Valiani"
   #  image : "images/team/sahad.png"
-   # designation : "Founder & President"
+  #  designation : "Founder & President"
   # team member
-  #- name : "Adway Kulkarni"
-   # image : "images/team/adway-close.png"
-    #designation : "Co-Founder & Vice President"
+  - name : "Sahad Valiani"
+    image : "images/team/sahadNew.jpg"
+    designation : "Founder & President"
+    link : "sahad"
   # team member
-  #- name : "Neelesh Chevuri"
-   # image : "images/team/neelesh.png"
-    #designation : "Cheif Technology Officer"
+  - name : "Adway Kulkarni"
+    image : "images/team/adway-close.png"
+    designation : "Co-Founder & Vice President"
+    link : "adway"
   # team member
-  #- name : "Hasini Rachapudi"
-   # image : "images/team/hasini.png"
-    #designation : "Blog Writer"
+  - name : "Neelesh Chevuri"
+    image : "images/team/neelesh.png"
+    designation : "Cheif Technology Officer"
+    link : "neelesh"
   # team member
-  #- name : "Wafiyah Wadud"
-   # image : "images/team/wafiya-close.png"
-    #designation : "Graphic Designer"
+  - name : "Hasini Rachapudi"
+    image : "images/team/hasini.png"
+    designation : "Blog Writer"
+    link : "hasini"
+  # team member
+  - name : "Wafiyah Wadud"
+    image : "images/team/wafiya-close.png"
+    designation : "Graphic Designer"
+    link : "wafiyah"
+  # team member
+  - name : "Owee Padalikar"
+    image : "images/team/oweePadalikar.jpg"
+    designation : "Researcher"
+    link : "owee"
+  # team member
+  - name : "Navya Hariprakash"
+    image : "images/team/navya.jpg"
+    designation : "Graphic Designer"  
+    link : "navya"
 ---
 \
 **About MeducationX**

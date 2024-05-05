@@ -19,20 +19,22 @@
 
 <!-- team -->
 {{ if gt (len .Params.Team) 1 }}
-<section class="section-sm">
+<section class="section-sm" id="Team">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-12 text-center">
         <h2 class="section-title">{{ i18n "team" }}</h2>
       </div>
       {{ range .Params.Team }}
       <div class="col-lg-3 col-sm-6 mb-4">
         <div class="card bg-transparent">
-          <div class="card-body p-0">
-            <img src="{{ .image | absURL }}" class="card-img-top mb-3" alt="">
-            <h4 class="card-title mb-2">{{ .name | title }}</h4>
-            <p class="text-light">{{ .designation | markdownify }}</p>
+          <a href="{{ .link }}" style="height: min-content;">
+          <div class="card-body p-1" style="background-color: white; border-radius: 1.25rem;">
+            <img src="{{ .image | absURL }}" class="card-img-top mb-3" style="border-top-left-radius: 1.25rem; border-top-right-radius: 1.25rem;" alt="">
+            <h4 class="card-title mb-2" style="text-align: center;">{{ .name | title }}</h4>
+            <p class="text-light" style="text-align: center;">{{ .designation | markdownify }}</p>
           </div>
+          </a>
         </div>
       </div>
       {{ end }}

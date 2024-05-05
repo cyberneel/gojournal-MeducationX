@@ -53,6 +53,11 @@ name = "About"
 URL = "about"
 weight = 1
 
+[[menu.main]]
+name = "Team"
+URL = "https://meducationx.org/about/#Team/"
+weight = 1
+
 #[[menu.main]]
 #name = "Privacy Policy"
 #URL = "privacy-policy"
