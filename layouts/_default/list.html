@@ -25,9 +25,9 @@
           <!--get filtered pages-->
           <!--{{ $paginator := (where .Site.RegularPages "Section" "post") }}-->
           {{ $paginator := .Site.RegularPages }}
-          {{ $filter := slice .Title }}
-          {{ $filteredPaginator := .Paginate (where $paginator "Params.categories" "intersect" $filter) }}
-          {{ range $index,$elements:= $filteredPaginator.Pages }}
+          {{ $filter := slice .Title }}  
+          {{ $filteredPaginator := .Paginate (where $paginator "Params.categories" "intersect" $filter) 10 }}
+          {{ range $index,$elements:= ($filteredPaginator).Pages }}
           {{ if eq $index 0}}
           <div class="col-12 mb-4">
             <article class="card">

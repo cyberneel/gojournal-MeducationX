@@ -2,27 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Meducation | Get Meducated</title>
-    <link>https://meducationx.github.io/categories/</link>
+    <link>https://meducationx.org/categories/</link>
     <description>Recent content in Categories on Meducation | Get Meducated</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2023 [MeducationX](https://meducation.github.io/)</copyright>
-    <lastBuildDate>Tue, 14 Nov 2023 15:40:24 +0600</lastBuildDate><atom:link href="https://meducationx.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meducationx.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blog</title>
-      <link>https://meducationx.github.io/categories/blog/</link>
-      <pubDate>Tue, 14 Nov 2023 15:40:24 +0600</pubDate>
+      <title>Article</title>
+      <link>https://meducationx.org/categories/article/</link>
+      <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://meducationx.github.io/categories/blog/</guid>
+      <guid>https://meducationx.org/categories/article/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>about</title>
-      <link>https://meducationx.github.io/categories/about/</link>
-      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <title>Competition</title>
+      <link>https://meducationx.org/categories/competition/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://meducationx.github.io/categories/about/</guid>
+      <guid>https://meducationx.org/categories/competition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quiz</title>
+      <link>https://meducationx.org/categories/quiz/</link>
+      <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://meducationx.org/categories/quiz/</guid>
       <description></description>
     </item>
     

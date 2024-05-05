@@ -1,5 +1,5 @@
 ---
-title: "You’re Here Because You Wanna Get Meducated!"
+title: "Expand Your Medical Knowledge With MeducationX!"
 image: "images/BLUELOGOONLY.png"
 date: 2023-10-22
 # description

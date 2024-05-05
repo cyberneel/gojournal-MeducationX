@@ -2,39 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://meducationx.github.io/categories/blog/</loc>
+    <loc>https://meducationx.org/categories/article/</loc>
+    <lastmod>2024-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/</loc>
+    <lastmod>2024-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/categories/</loc>
+    <lastmod>2024-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/blog-sleep/</loc>
+    <lastmod>2024-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/</loc>
+    <lastmod>2024-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/blog-7/</loc>
+    <lastmod>2024-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/blog-6/</loc>
+    <lastmod>2024-02-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/blog-5/</loc>
+    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/blog-4/</loc>
+    <lastmod>2024-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/categories/competition/</loc>
+    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/competitions/</loc>
+    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/competitions/competition-2/</loc>
+    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/competitions/competition-1/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/blog-3/</loc>
+    <lastmod>2023-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/categories/quiz/</loc>
+    <lastmod>2023-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/quizzes/</loc>
+    <lastmod>2023-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/quizzes/quiz-1/</loc>
+    <lastmod>2023-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://meducationx.org/post/blog-2/</loc>
     <lastmod>2023-11-14T15:40:24+06:00</lastmod>
   </url><url>
-    <loc>https://meducationx.github.io/post/</loc>
-    <lastmod>2023-11-14T15:40:24+06:00</lastmod>
-  </url><url>
-    <loc>https://meducationx.github.io/post/blog-2/</loc>
-    <lastmod>2023-11-14T15:40:24+06:00</lastmod>
-  </url><url>
-    <loc>https://meducationx.github.io/categories/</loc>
-    <lastmod>2023-11-14T15:40:24+06:00</lastmod>
-  </url><url>
-    <loc>https://meducationx.github.io/</loc>
-    <lastmod>2023-11-14T15:40:24+06:00</lastmod>
-  </url><url>
-    <loc>https://meducationx.github.io/post/blog-1/</loc>
+    <loc>https://meducationx.org/post/blog-1/</loc>
     <lastmod>2023-10-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meducationx.github.io/categories/about/</loc>
+    <loc>https://meducationx.org/about/</loc>
     <lastmod>2023-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meducationx.github.io/thankyou/</loc>
+    <loc>https://meducationx.org/thankyou/</loc>
     <lastmod>2023-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meducationx.github.io/about/</loc>
-    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+    <loc>https://meducationx.org/contact/</loc>
   </url><url>
-    <loc>https://meducationx.github.io/contact/</loc>
+    <loc>https://meducationx.org/privacy-policy/</loc>
   </url><url>
-    <loc>https://meducationx.github.io/privacy-policy/</loc>
+    <loc>https://meducationx.org/search/</loc>
   </url><url>
-    <loc>https://meducationx.github.io/search/</loc>
-  </url><url>
-    <loc>https://meducationx.github.io/tags/</loc>
+    <loc>https://meducationx.org/tags/</loc>
   </url>
 </urlset>

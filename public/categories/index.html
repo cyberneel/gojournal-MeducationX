@@ -14,20 +14,34 @@
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="https://meducationx.github.io/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://meducationx.org/plugins/bootstrap/bootstrap.min.css">
   
-  <link rel="stylesheet" href="https://meducationx.github.io/plugins/slick/slick.css">
+  <link rel="stylesheet" href="https://meducationx.org/plugins/slick/slick.css">
   
-  <link rel="stylesheet" href="https://meducationx.github.io/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://meducationx.org/plugins/themify-icons/themify-icons.css">
   
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="https://meducationx.github.io/scss/style.css" media="screen">
+  <link rel="stylesheet" href="https://meducationx.org/scss/style.css" media="screen">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="https://meducationx.github.io/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="https://meducationx.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://meducationx.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://meducationx.org/images/favicon.png" type="image/x-icon">
+
+  
+  
+  <script src="https://meducationx.org/js/quizdown.js"></script>
+  
+  <script src="https://meducationx.org/js/quizdownKatex.js"></script>
+  
+  <script src="https://meducationx.org/js/quizdownHighlight.js"></script>
+  
+  <script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script> 
+
+  <script>
+    var submitted = false; 
+  </script>
 
 </head><body class="area">
 	<ul class="circles">
@@ -45,7 +59,7 @@
 <!-- preloader start -->
 <div class="preloader">
   
-  <img src="https://meducationx.github.io/images/BLUELOGOONLY.png" alt="preloader">
+  <img src="https://meducationx.org/images/BLUELOGOONLY.png" alt="preloader">
   
 </div>
 <!-- preloader end -->
@@ -65,7 +79,7 @@
         </div>
         <div class="col-lg-4 text-center col-md-2">
           <a href="/"><img width="180px" class="img-fluid hov-scale-logo"
-              src="https://meducationx.github.io/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
+              src="https://meducationx.org/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
         </div>
         <div class="col-lg-4 col-md-5 d-none d-md-block">
           <form action="/search" class="search-wrapper">
@@ -100,13 +114,37 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://meducationx.github.io/about">About</a>
+            <a class="nav-link" href="https://meducationx.org/about">About</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://meducationx.github.io/contact">Contact</a>
+            <a class="nav-link" href="https://meducationx.org/contact">Contact</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.org/categories/article">Articles</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.org/quizzes">Quizzes</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.org/competitions">Competitions</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.carrd.co">Links</a>
           </li>
           
           
@@ -122,8 +160,8 @@
   
             <div class="col-lg-7 mx-auto text-center" style="margin-top: 1.5rem!important;">
               
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe" onsubmit="submitted=true">
+                <iframe name="hidden_iframe" id="hidden_iframe_H" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe_H" onsubmit="submitted=true">
                   <div class="input-group px-lg-5">
                     <input type="email" class="form-control" name="entry.1196139997" placeholder="Your Email Address">
                     <div class="input-group-append">
@@ -136,10 +174,10 @@
           
 </header>
 
-
+<br>
 <section class="section-sm bg-light">
   <div class="container text-center">
-    <h1>Categories</h1>
+    <h1>Category: Categories</h1>
   </div>
 </section>
 
@@ -156,32 +194,51 @@
 
 
 <div class="widget">
-  <h4 class="widget-title">Recent Posts</h4>
+  
+  <h4 class="widget-title">Latest Articles</h4>
   <ul class="list-unstyled">
     
+    
     <li class="media mb-3">
-      <a href="https://meducationx.github.io/post/blog-2/">
+      <a href="https://meducationx.org/post/blog-sleep/">
         
-        <img class="mr-2" src="https://lh7-us.googleusercontent.com/FYA6CqJrwkiC_DfGeTWY9_-Kp5c5v47Wkz6czwuF6lTqpUzwz2dM__SNls83_WCkvjNsXz4r3lDTjKxuImO8F5LUB6yL1vfAF8Bv4HBTdYwbfMRCTAy6Cym7ZqiyEZC0ST1PpJHshWED_a1Nb_BdtFQ" height="65px" width="80px" style="object-fit: cover;">
+        <img class="mr-2" src="https://static.vecteezy.com/system/resources/previews/000/662/565/original/man-sleeping-in-bed-vector.jpg" height="65px" width="80px" style="object-fit: cover;">
         
       </a>
       <div class="media-body">
-        <h5 class="mt-0 mb-1 h6"><a class="post-title" href="https://meducationx.github.io/post/blog-2/">Caffeine</a></h5>
-        <small class="post-date">Nov 14, 2023</small>
+        <h5 class="mt-0 mb-1 h6"><a class="post-title" href="https://meducationx.org/post/blog-sleep/">Consciousness &amp; Sleep</a></h5>
+        <small class="post-date">Mar 02, 2024</small>
       </div>
     </li>
     
+    
+    
     <li class="media mb-3">
-      <a href="https://meducationx.github.io/post/blog-1/">
+      <a href="https://meducationx.org/post/blog-7/">
         
-        <img class="mr-2" src="https://lh7-us.googleusercontent.com/kO8Lror3kyeEgrfxr3s4FH-aX8fbpxvOsV5UAANjENOzIN4Dfieb5eePZFbKuDaPRc7ErUkOTLH_Gyl2AmPpyV4dksKZJQNJdg9QXeMKyqXJS3gh_OSQl44Fb9ZIJa1xSONx-y5CTe-d_v4qokjweO0" height="65px" width="80px" style="object-fit: cover;">
+        <img class="mr-2" src="https://imperavi.com/tmp/images/0046605f8b8810acdf26e220332fd3cf.jpg" height="65px" width="80px" style="object-fit: cover;">
         
       </a>
       <div class="media-body">
-        <h5 class="mt-0 mb-1 h6"><a class="post-title" href="https://meducationx.github.io/post/blog-1/">Spooky Spectrum of Illnesses</a></h5>
-        <small class="post-date">Oct 31, 2023</small>
+        <h5 class="mt-0 mb-1 h6"><a class="post-title" href="https://meducationx.org/post/blog-7/">Ozempic</a></h5>
+        <small class="post-date">Mar 01, 2024</small>
       </div>
     </li>
+    
+    
+    
+    <li class="media mb-3">
+      <a href="https://meducationx.org/post/blog-6/">
+        
+        <img class="mr-2" src="https://lh7-us.googleusercontent.com/5L89ziJqCwXw2uepfcaDXbwz5I2u6Di4kwejTYkZZNymmTJ1XluqKD9AyJXH3MPdJaL5386OtvM5-5tgiK4wUVQPWjQi6Z1KqGExAVJ3lc_c6Ffav2aRADKwnjM8aBKECwQz2W6deZ8UmwHEaKZyuYw" height="65px" width="80px" style="object-fit: cover;">
+        
+      </a>
+      <div class="media-body">
+        <h5 class="mt-0 mb-1 h6"><a class="post-title" href="https://meducationx.org/post/blog-6/">The Brain</a></h5>
+        <small class="post-date">Feb 29, 2024</small>
+      </div>
+    </li>
+    
     
   </ul>
 </div>
@@ -189,11 +246,18 @@
 <div class="widget">
   <h4 class="widget-title">Categories</h4>
   <ul class="list-unstyled widget-list">
-    <li><a href="/categories/about">About</a></li>
-    <li><a href="/categories/blog">Blog</a></li>
+    <li><a href="/categories/article">Article</a></li>
+    <li><a href="/categories/competition">Competition</a></li>
+    <li><a href="/categories/quiz">Quiz</a></li>
   </ul>
 </div>
 
+
+<div class="widget">
+  <h4 class="widget-title">Infographics</h4>
+  <div class="instafeed row mx-0" id="instafeed" data-userId="6948265175253817"
+    data-accessToken=""></div>
+</div>
 
 
 <div class="widget">
@@ -215,41 +279,7 @@
           
           
           
-          <div class="col-12 mb-4">
-            <article class="card">
-              <div class="card-body row">
-                <div class="col-12 mb-4">
-                  
-                  <img src="https://lh7-us.googleusercontent.com/FYA6CqJrwkiC_DfGeTWY9_-Kp5c5v47Wkz6czwuF6lTqpUzwz2dM__SNls83_WCkvjNsXz4r3lDTjKxuImO8F5LUB6yL1vfAF8Bv4HBTdYwbfMRCTAy6Cym7ZqiyEZC0ST1PpJHshWED_a1Nb_BdtFQ" class="img-fluid w-100" alt="Categories"
-                    style="height: 350px; object-fit: cover;">
-                  
-                </div>
-                <div class="col-md-8 mx-auto text-center">
-                  <small class="post-category">blog</small>
-                  <h3 class="mb-3"><a class="post-title" href="https://meducationx.github.io/post/blog-2/">Caffeine</a></h3>
-                  <small class="post-date date-style large">November 14, 2023</small>
-                  <p class="my-4">Caffeine is a natural stimulant found in coffee beans, tea leaves, cocoa beans, and some other plants. It is frequently added to a variety of items, …</p>
-                  <a href="https://meducationx.github.io/post/blog-2/" class="btn btn-outline-primary">Read More</a>
-                </div>
-              </div>
-            </article>
-          </div>
-          
-          
-          
-          <div class="col-sm-6 mb-4">
-            <article class="card">
-              <div class="card-body">
-                <img src="https://lh7-us.googleusercontent.com/kO8Lror3kyeEgrfxr3s4FH-aX8fbpxvOsV5UAANjENOzIN4Dfieb5eePZFbKuDaPRc7ErUkOTLH_Gyl2AmPpyV4dksKZJQNJdg9QXeMKyqXJS3gh_OSQl44Fb9ZIJa1xSONx-y5CTe-d_v4qokjweO0" class="img-fluid w-100 mb-3" alt="Spooky Spectrum of Illnesses"
-                  style="height: 350px; object-fit: cover;">
-                <small class="post-category mb-2">blog</small>
-                <h3 class="mb-2"><a class="post-title" href="https://meducationx.github.io/post/blog-1/">Spooky Spectrum of Illnesses</a></h3>
-                <small class="post-date mb-2">October 31, 2023</small>
-                <p class="mb-3">Many diseases and disorders affect populations all around the world. While some of them are more common, others are not as known.</p>
-                <a href="https://meducationx.github.io/post/blog-1/" class="btn btn-outline-primary">Read More</a>
-              </div>
-            </article>
-          </div>
+            
           
           
           <div class="col-12">
@@ -276,7 +306,7 @@
 </section>
 
 
-<footer class="section-sm pb-0 bg-light">
+<footer class="section-sm pb-0" style="background-color: white;">
   <div class="container">
     <div class="row">
       
@@ -286,8 +316,8 @@
         <p class="mb-4">Subscribe now to get notified about exclusive News And Views Issues every week!</p>
         
         
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe" onsubmit="submitted=true">
+        <iframe name="hidden_iframe_F" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe_F" onsubmit="submitted=true">
           <div class="input-group px-lg-5">
             <input type="email" class="form-control" name="entry.1196139997" placeholder="Your Email Address">
             <div class="input-group-append">
@@ -303,13 +333,13 @@
           <div class="col-lg-4 col-md-5 text-center text-md-left mb-4 mb-md-0">
             <ul class="list-inline footer-list">
               
-              <li class="list-inline-item"><a href="https://meducationx.github.io/contact">contact</a></li>
+              <li class="list-inline-item"><a href="https://meducationx.org/contact">contact</a></li>
               
             </ul>
           </div>
           <div class="col-lg-4 text-center col-md-2 mb-4 mb-md-0">
             <a href="/"><img width="180px" class="img-fluid"
-                src="https://meducationx.github.io/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
+                src="https://meducationx.org/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
           </div>
           <div class="col-lg-4 col-md-5 text-md-right text-center">
             <ul class="list-inline social-icons">
@@ -331,29 +361,29 @@
 
 
 <script>
-  var indexURL = "https://meducationx.github.io/index.json"
+  var indexURL = "https://meducationx.org/index.json"
 </script>
 
 
 
-<script src="https://meducationx.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="https://meducationx.org/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://meducationx.org/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/slick/slick.min.js"></script>
+<script src="https://meducationx.org/plugins/slick/slick.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/search/fuse.min.js"></script>
+<script src="https://meducationx.org/plugins/search/fuse.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/search/mark.js"></script>
+<script src="https://meducationx.org/plugins/search/mark.js"></script>
 
-<script src="https://meducationx.github.io/plugins/search/search.js"></script>
+<script src="https://meducationx.org/plugins/search/search.js"></script>
 
-<script src="https://meducationx.github.io/plugins/instafeed/instafeed.min.js"></script>
-
-
+<script src="https://meducationx.org/plugins/instafeed/instafeed.min.js"></script>
 
 
-<script src="https://meducationx.github.io/js/script.min.js"></script>
+
+
+<script src="https://meducationx.org/js/script.min.js"></script>
 
 
 </body>

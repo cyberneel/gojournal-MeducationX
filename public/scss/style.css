@@ -212,22 +212,29 @@ body {
   transition-timing-function: ease-in-out; }
 
 .widget:hover {
-  transform: scale(1.05); }
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 2px #67b8ff8f !important; }
 
 .navbar-collapse {
   box-shadow: 0px 0px 15px 0px #0000000f; }
 
 .card:hover {
-  transform: scale(1.025); }
+  transform: scale(1.025);
+  box-shadow: 0px 0px 10px 2px #67b8ff8f !important; }
 
 .post-wrapper:hover {
-  transform: scale(1.025); }
+  transform: scale(1.025);
+  box-shadow: 0px 0px 10px 2px #60b5ff; }
 
 .post-wrapper {
   border-radius: 15px;
   box-shadow: 0px 0px 10px 2px #2e8ce1;
   transition: 0.2s;
   transition-timing-function: ease-in-out; }
+
+.instafeed {
+  display: grid;
+  grid-template-columns: auto auto; }
 
 .content {
   padding: 10px;
@@ -675,7 +682,7 @@ textarea.form-control {
 
 .content a {
   color: #666;
-  border-bottom: 1px dotted #DEDEDE; }
+  border-bottom: 4px dotted #DEDEDE; }
   .content a:hover {
     color: #2074e3; }
 

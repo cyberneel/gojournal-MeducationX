@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://meducationx.github.io/"
+baseURL = "https://meducationx.org/"
 title = "Meducation | Get Meducated"
 theme = "gojournal"
 # post pagination
@@ -71,12 +71,17 @@ weight = 4
 [[menu.main]]
 name = "Quizzes"
 url = "quizzes"
-weight = 5
+weight = 6
+
+[[menu.main]]
+name = "Articles"
+url = "categories/article"
+weight = 6
 
 [[menu.main]]
 name = "Competitions"
 URL = "competitions"
-weight = 6
+weight = 7
 
 [[menu.main]]
 name = "Links"

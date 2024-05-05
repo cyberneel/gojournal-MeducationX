@@ -9,7 +9,7 @@
 <!-- recent-post -->
 <div class="widget">
   <!-- <h4 class="widget-title">{{ i18n "recent_post"}}</h4> -->
-  <h4 class="widget-title">Latest Blogs</h4>
+  <h4 class="widget-title">Latest Articles</h4>
   <ul class="list-unstyled">
     {{ range first 3 ( where .Site.RegularPages "Section" "post" )}}
     {{ if not (eq (len .Params.categories) 0) }}
@@ -46,7 +46,7 @@
 <!-- instagram-post -->
 {{ if .Site.Params.instafeed.enable }}
 <div class="widget">
-  <h4 class="widget-title">{{ i18n "instafeed"}}</h4>
+  <h4 class="widget-title">Infographics</h4>
   <div class="instafeed row mx-0" id="instafeed" data-userId="{{.Site.Params.instafeed.user_id}}"
     data-accessToken="{{.Site.Params.instafeed.access_token}}"></div>
 </div>

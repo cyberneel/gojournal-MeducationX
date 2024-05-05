@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="Contact Meducationx!">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Hugo 0.115.4">
 
@@ -14,20 +14,34 @@
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="https://meducationx.github.io/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://meducationx.org/plugins/bootstrap/bootstrap.min.css">
   
-  <link rel="stylesheet" href="https://meducationx.github.io/plugins/slick/slick.css">
+  <link rel="stylesheet" href="https://meducationx.org/plugins/slick/slick.css">
   
-  <link rel="stylesheet" href="https://meducationx.github.io/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://meducationx.org/plugins/themify-icons/themify-icons.css">
   
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="https://meducationx.github.io/scss/style.css" media="screen">
+  <link rel="stylesheet" href="https://meducationx.org/scss/style.css" media="screen">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="https://meducationx.github.io/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="https://meducationx.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://meducationx.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://meducationx.org/images/favicon.png" type="image/x-icon">
+
+  
+  
+  <script src="https://meducationx.org/js/quizdown.js"></script>
+  
+  <script src="https://meducationx.org/js/quizdownKatex.js"></script>
+  
+  <script src="https://meducationx.org/js/quizdownHighlight.js"></script>
+  
+  <script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script> 
+
+  <script>
+    var submitted = false; 
+  </script>
 
 </head><body class="area">
 	<ul class="circles">
@@ -45,7 +59,7 @@
 <!-- preloader start -->
 <div class="preloader">
   
-  <img src="https://meducationx.github.io/images/BLUELOGOONLY.png" alt="preloader">
+  <img src="https://meducationx.org/images/BLUELOGOONLY.png" alt="preloader">
   
 </div>
 <!-- preloader end -->
@@ -65,7 +79,7 @@
         </div>
         <div class="col-lg-4 text-center col-md-2">
           <a href="/"><img width="180px" class="img-fluid hov-scale-logo"
-              src="https://meducationx.github.io/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
+              src="https://meducationx.org/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
         </div>
         <div class="col-lg-4 col-md-5 d-none d-md-block">
           <form action="/search" class="search-wrapper">
@@ -100,13 +114,37 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://meducationx.github.io/about">About</a>
+            <a class="nav-link" href="https://meducationx.org/about">About</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://meducationx.github.io/contact">Contact</a>
+            <a class="nav-link" href="https://meducationx.org/contact">Contact</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.org/categories/article">Articles</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.org/quizzes">Quizzes</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.org/competitions">Competitions</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://meducationx.carrd.co">Links</a>
           </li>
           
           
@@ -122,8 +160,8 @@
   
             <div class="col-lg-7 mx-auto text-center" style="margin-top: 1.5rem!important;">
               
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe" onsubmit="submitted=true">
+                <iframe name="hidden_iframe" id="hidden_iframe_H" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe_H" onsubmit="submitted=true">
                   <div class="input-group px-lg-5">
                     <input type="email" class="form-control" name="entry.1196139997" placeholder="Your Email Address">
                     <div class="input-group-append">
@@ -141,26 +179,26 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/thankyou';}"></iframe>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd73iLUo4NsczzaTV6GwUtVEzif-1Cvn3UZIOf53UAREvAngg/formResponse" target="hidden_iframe" method="POST" class="bg-white p-lg-5 p-4 row" onsubmit="submitted=true">
+        <iframe name="hidden_iframe_con" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/thankyou';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd73iLUo4NsczzaTV6GwUtVEzif-1Cvn3UZIOf53UAREvAngg/formResponse" target="hidden_iframe_con" method="POST" class="bg-white p-lg-5 p-4 row" onsubmit="submitted=true">
           <div class="col-12">
             <h1 class="section-title">Contact Us</h1>
           </div>
           <div class="form-group col-md-6">
             <label for="first-name">Your First Name</label>
-            <input type="text" name="entry.1243142390" id="first-name" class="form-control" placeholder="Alexender">
+            <input type="text" name="entry.1243142390" id="first-name" class="form-control" placeholder="Alexender" required>
           </div>
           <div class="form-group col-md-6">
             <label for="last-name">Your Last Name</label>
-            <input type="text" name="entry.1520780422" id="last-name" class="form-control" placeholder="Grahambel">
+            <input type="text" name="entry.1520780422" id="last-name" class="form-control" placeholder="Grahambel" required>
           </div>
           <div class="form-group col-12">
             <label for="email">Your Email Address</label>
-            <input type="email" name="entry.1437271874" id="email" class="form-control" placeholder="alexender@email.com">
+            <input type="email" name="entry.1437271874" id="email" class="form-control" placeholder="alexender@email.com" required>
           </div>
           <div class="form-group col-12">
             <label for="message">Your Message Here</label>
-            <textarea name="entry.353532996" id="message" class="form-control" placeholder="Lorem Ipsum is simply dummy text of the printing and...……."></textarea>
+            <textarea name="entry.353532996" id="message" class="form-control" placeholder="Lorem Ipsum is simply dummy text of the printing and...……." required></textarea>
           </div>
           <div class="col-12">
             <button class="btn btn-primary" type="submit">Send</button>
@@ -171,7 +209,7 @@
   </div>
 </section>
 
-<footer class="section-sm pb-0 bg-light">
+<footer class="section-sm pb-0" style="background-color: white;">
   <div class="container">
     <div class="row">
       
@@ -181,8 +219,8 @@
         <p class="mb-4">Subscribe now to get notified about exclusive News And Views Issues every week!</p>
         
         
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe" onsubmit="submitted=true">
+        <iframe name="hidden_iframe_F" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#';}"></iframe>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdZnpEpVnZpVSskFkRUDtzAhn0wxJ4s-ZJGGkUmjQNIrKd56w/formResponse" method="post" name="mc-embedded-subscribe-form" target="hidden_iframe_F" onsubmit="submitted=true">
           <div class="input-group px-lg-5">
             <input type="email" class="form-control" name="entry.1196139997" placeholder="Your Email Address">
             <div class="input-group-append">
@@ -198,13 +236,13 @@
           <div class="col-lg-4 col-md-5 text-center text-md-left mb-4 mb-md-0">
             <ul class="list-inline footer-list">
               
-              <li class="list-inline-item"><a href="https://meducationx.github.io/contact">contact</a></li>
+              <li class="list-inline-item"><a href="https://meducationx.org/contact">contact</a></li>
               
             </ul>
           </div>
           <div class="col-lg-4 text-center col-md-2 mb-4 mb-md-0">
             <a href="/"><img width="180px" class="img-fluid"
-                src="https://meducationx.github.io/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
+                src="https://meducationx.org/images/BLUELOGOONLY.png" alt="Meducation | Get Meducated"></a>
           </div>
           <div class="col-lg-4 col-md-5 text-md-right text-center">
             <ul class="list-inline social-icons">
@@ -226,29 +264,29 @@
 
 
 <script>
-  var indexURL = "https://meducationx.github.io/index.json"
+  var indexURL = "https://meducationx.org/index.json"
 </script>
 
 
 
-<script src="https://meducationx.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="https://meducationx.org/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://meducationx.org/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/slick/slick.min.js"></script>
+<script src="https://meducationx.org/plugins/slick/slick.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/search/fuse.min.js"></script>
+<script src="https://meducationx.org/plugins/search/fuse.min.js"></script>
 
-<script src="https://meducationx.github.io/plugins/search/mark.js"></script>
+<script src="https://meducationx.org/plugins/search/mark.js"></script>
 
-<script src="https://meducationx.github.io/plugins/search/search.js"></script>
+<script src="https://meducationx.org/plugins/search/search.js"></script>
 
-<script src="https://meducationx.github.io/plugins/instafeed/instafeed.min.js"></script>
-
-
+<script src="https://meducationx.org/plugins/instafeed/instafeed.min.js"></script>
 
 
-<script src="https://meducationx.github.io/js/script.min.js"></script>
+
+
+<script src="https://meducationx.org/js/script.min.js"></script>
 
 
 </body>

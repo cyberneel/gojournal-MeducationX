@@ -6,7 +6,7 @@ image : "https://lh7-us.googleusercontent.com/FYA6CqJrwkiC_DfGeTWY9_-Kp5c5v47Wkz
 # description
 description: "Caffeine is one of the most popular psychoactive chemicals in the world."
 # Taxonomies
-categories: ["Blog"]
+categories: ["Article"]
 # post type
 type: "featured" # all type (featured, trending, regular)
 draft: false
