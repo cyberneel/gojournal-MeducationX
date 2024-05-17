@@ -27,11 +27,11 @@ $(window).on('load', function () {
 
 	var userId = $('#instafeed').attr('data-userId');
 	//var accessToken = $('#instafeed').attr('data-accessToken');
-	var accessToken = 'IGQWRNQ2FJZAlFNYW1TcnlDR0';
-	accessToken += 'NGczRWdjRZANW9ET3d2TGZA4';
-	accessToken += 'RUZASLTkxZAmVhb2k5Yj';
-	accessToken += 'J3Y0lQcXJqMFRQY2llQ0V1TGZA';
-	accessToken += 'IMUNkRWlWMVVUVThOcTQ4WTRYOVZAUb0lGRmpzQ0lWMC1RblBNTWNYMnh5N21wQ0w5YktZANm8ZD'
+	var accessToken = 'IGQWRObUk0RC0yZAX';
+	accessToken += 'IwQUdlQTJGRHdOMkRZAY0JpYlI';
+	accessToken += '4TEJmQkIzRXdoMkp4YVJBRnhkRW1HMER';
+	accessToken += 'zM0ZAVSXhqZAVVZAZA19TdmM0V';
+	accessToken += 'Whkbnp5QUpVYlhjSlg5M2dva2NHM1U5ZAXRHakRBLURGbXdKZADh0eDN1Q0xtUTR0WWcZD'
 
 	console.log("TEST");
 
