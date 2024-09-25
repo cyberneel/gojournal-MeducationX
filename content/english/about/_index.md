@@ -29,11 +29,6 @@ team:
     designation : "Cheif Technology Officer"
     link : "neelesh"
   # team member
-  - name : "Hasini Rachapudi"
-    image : "images/team/hasini.png"
-    designation : "Blog Writer"
-    link : "hasini"
-  # team member
   - name : "Wafiyah Wadud"
     image : "images/team/wafiya-close.png"
     designation : "Graphic Designer"

@@ -1,5 +1,5 @@
 ---
-title: "Sahad Viliani"
+title: "Sahad Valiani"
 date: 2024-05-05
 # post thumb
 image : "images/team/sahadNew.jpg"

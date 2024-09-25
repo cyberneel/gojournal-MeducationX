@@ -9,7 +9,7 @@ description: "Blog Writer."
 categories: [""]
 # post type
 type: "" # all type (featured, trending, regular)
-draft: false
+draft: true
 ---
 \
 &emsp;Interests and Hobbies: Neurology, Psychology, Bollywood dancing, Hip-hop dancing, Carnatic singing, writing poetry. Aiming for medical field (hopefully neuropsychiatry).
